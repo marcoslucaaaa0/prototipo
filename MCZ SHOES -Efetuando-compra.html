@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	<title>Treinado Jumbotron & Cards </title>
+
+	<!-- CSS -->
+	<link href="public/css/bootstrap.min.css" rel="stylesheet">
+	<
+	<link rel="stylesheet" type="text/css" href="StyleJumb.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<nav class="navbar navbar-expand-xl fixed-top bg-dark navbar-dark">
+		<a href="file:///C:/Users/CGTI/Desktop/aprendendo%20front/Aulas/aulas-25-30/MCZ%20SHOES.html" class="navbar-brand">MCZ SHOES<i class="fa fa-angellist"></i></a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- links -->
+		<div id="menu" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="menu_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</a>
+
+					<div class="dropdown-menu">
+						<a href="file:///C:/Users/CGTI/Desktop/aprendendo%20front/Aulas/aulas-25-30/MCZ%20SHOES%20-T%C3%AAnis%20de%20corrida.html" class="dropdown-item">Tênis de corrida</a>
+						<div class="dropdown-divider"></div>
+						<a href="file:///C:/Users/CGTI/Desktop/aprendendo%20front/Aulas/aulas-25-30/MCZ%20SHOES%20-Skate%20e%20Surf.html" class="dropdown-item">Skate e Surf</a>
+						<div class="dropdown-divider"></div>
+						<a href="file:///C:/Users/CGTI/Desktop/aprendendo%20front/Aulas/aulas-25-30/MCZ%20SHOES%20-Basquete.html" class="dropdown-item">Basquete</a>
+						<div class="dropdown-divider"></div>
+						<a href="file:///C:/Users/CGTI/Desktop/aprendendo%20front/Aulas/aulas-25-30/MCZ%20SHOES%20-T%C3%8ANIS%20-%20ARTES%20MARCIAIS.html" class="dropdown-item">TÊNIS-ARTES MARCIAIS</a>
+
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+	<br><br>
+	<div class="jumbotron jumbotron-fluid">
+		<div  class="container-fluid color">
+			<h1 class="display-4">MCZ SHOES</h1>
+
+		</div>
+	</div>
+	<br><br>
+	<div class="container-fluid">
+		<h2>Pagamento</h2>
+		<form class="ajustando">
+			<fieldset class="form-group">
+				<div class="row">
+					<div class="col-sm-10">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="opcao1" checked>
+							<label class="form-check-label" for="gridRadios1">
+								Credito
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="opcao2">
+							<label class="form-check-label" for="gridRadios2">
+								Debito
+							</label>
+						</div>
+						<div class="form-check disabled">
+							<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="opcao3" disabled>
+							<label class="form-check-label" for="gridRadios3">
+								Boleto
+							</label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-row">
+				<div class="form-group col-md-2">
+					<label for="inputCity">Numero do cartao *</label>
+					<input type="text" class="form-control" id="inputCity" placeholder="0000 0000 0000 0000">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="inputState">Banderira do cartao *</label>
+					<select id="inputState" class="form-control">
+						<option selected>MasterCard</option>
+						<option selected>Visa</option>
+						<option selected>Elo</option>
+						<option selected>Amex</option>
+						<option selected>Hipercard</option>
+						<option selected>Green Card</option>
+						<option selected>Verocard</option>
+						<option selected></option>
+
+					</select>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-2">
+					<label for="inputZip">CVV *</label >
+					<input type="text" class="form-control" id="inputZip" placeholder="XXX" >
+				</div>
+				<div class="form-group col-md-2">
+					<label for="inputZip">Vencimento *</label >
+					<input type="text" class="form-control" id="inputZip" placeholder="XX/XX" >
+				</div>
+				<div class="form-group col-md-2">
+					<label for="inputState">Parcelas *</label>
+					<select id="inputState" class="form-control">
+						<option selected>1x de R$ 360,00</option>
+						<option selected>2x de R$ 180,00</option>
+						<option selected>3x de R$ 120,00</option>
+						<option selected>4x de R$ 90,00</option>
+						<option selected>5x de R$ 72,00</option>
+						<option selected>6x de R$ 60,00</option>
+						<option selected>7x de R$ 52,00</option>
+						<option selected>8x de R$ 45,00</option>
+						<option selected>9x de R$ 40,00</option>
+						<option selected></option>
+
+					</select>
+				</div>
+			</div>
+
+			<a href="file:///C:/Users/CGTI/Desktop/aprendendo%20front/Aulas/aulas-25-30/MCZ%20SHOES.html" class="btn btn-danger">Comprar<i class="fa fa-cart-arrow-down"></i></a>
+		</form>
+
+		<div class="col-3 card mb-3" id="nova">
+			<div class="card-header">
+				<h2>Sua compra</h2>
+			</div>
+
+			<div class="card-body">
+				<div class="card border border-0">
+					<img src="public/img/Tênis Nike Lebron.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Tênis Nike Lebron Witness IV Masculino - Preto e Vermelho</h5>
+						<p class="card-text">R$ 360,00
+						até 9x de R$ 40,00</p>
+
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<br><br>
+
+		<footer>
+			<div id="foot">
+				<div class="connect">
+					<a href="https://github.com/marcoslucaaaa0" target="_blank">
+						<i class="fa fa-github"></i>
+					</a>
+				</div>
+
+				<p class="foot-text">© MCZ SHOES ( Todos os
+				direitos reservados).</p>
+			</div>
+			<!-- JS -->
+			<script src="public/js/jquery.js"></script>
+			<script src="public/js/bootstrap.bundle.min.js"></script>
+		</footer>
+
+	</body>
+	</html>
